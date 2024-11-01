@@ -24,7 +24,7 @@ function App() {
     try {
       const response = await axios.get(`${API_URL}/api/notes`, { params: searchParams });
       setNotes(response.data);
-      console.log(searchParams);
+      //console.log(searchParams);
     } catch (error) {
       console.error("Error fetching notes:", error);
     }
